@@ -1,0 +1,107 @@
+body {
+	background-color: #EAEAEA;
+}
+
+#mainNav {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+#navigation {
+	margin: 0px 5%;
+	position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.navBar {
+	background-color: #c92a2a;
+	display: inline-block;
+	padding: 15px;
+	color: white;
+}
+
+#main {
+  margin: 0px 25%;
+  display:  grid;
+  grid-template-rows: 25% 75%;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "block1 block2";
+}
+
+#block1 {
+  grid-area: block1;
+  background-color: #E54B4B;
+}
+
+#sideNav {
+  display: flex;
+  flex-direction: column;
+  margin: 20%;
+}
+
+.sideBar {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	border-bottom: solid;
+	border-color: white;
+	margin: 10px;
+}
+
+#block2 {
+  grid-area: block2;
+  background-color: #C3BFBF;
+  display: inline-block;
+}
+
+.mainGridArea {
+  align-items: center;
+  display: flex;
+  position: relative;
+  min-height: 500px;
+  height: 100vh;
+  padding: 30px;
+  box-shadow: 10px 10px 5px gray;
+  text-align: center;
+}
+
+.mainGridArea img {
+	max-width: 100%;
+  max-height: 100%;
+  height: 25%;
+  width: 40%;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "myArea"
+   "myArea" 
+   "myArea";
+}
+
+.workGrid img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 60%;
+  width: 80%;
+}
+
+@media only screen and (max-width: 600) {
+  .workGrid {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "myArea"
+    "myArea" 
+    "myArea";
+  }
+}
