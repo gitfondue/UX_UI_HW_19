@@ -33,12 +33,13 @@ body {
 #block1 {
   grid-area: block1;
   background-color: #E54B4B;
+  position: relative;
 }
 
 #sideNav {
   display: flex;
   flex-direction: column;
-  margin: 20%;
+  margin: 15%;
 }
 
 .sideBar {
@@ -61,10 +62,11 @@ body {
   display: flex;
   position: relative;
   min-height: 500px;
-  height: 100vh;
+  height: 70vh;
   padding: 30px;
   box-shadow: 10px 10px 5px gray;
   text-align: center;
+  overflow: auto;
 }
 
 .mainGridArea img {
@@ -95,7 +97,59 @@ body {
   width: 80%;
 }
 
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px) {
+
+  body {
+    background-color: #C3BFBF;
+  }
+
+  #main {
+    margin: 0px;
+    display:  grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "block1"
+    "block2";
+  }
+
+  #block1 {
+    grid-area: block1;
+    background-color: #E54B4B;
+    position: relative;
+  }
+
+  #sideNav {
+    display: flex;
+    flex-direction: row;
+    margin: 25%;
+  }
+
+  .sideBar {
+    display: inline-block;
+    padding: 50px;
+    color: white;
+    border-bottom: solid;
+    border-color: white;
+    margin: 100px;
+  }
+
+  #block2 {
+    grid-area: block2;
+    background-color: #C3BFBF;
+    display: inline-block;
+  }
+
+  .mainGridArea {
+    align-items: center;
+    display: flex;
+    position: relative;
+    min-width: 600px;
+    height: 70vh;
+    padding: 30px;
+    text-align: center;
+    overflow: auto;
+  }
+
   .workGrid {
     display: grid;
     grid-template-rows: 33% 33% 33%;
