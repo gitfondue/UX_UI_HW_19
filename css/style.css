@@ -1,5 +1,11 @@
 body {
 	background-color: #EAEAEA;
+  font-family: "Verdana"; 
+  font-size: 14px;
+}
+
+h3,h4 {
+  font-family: "Avenir";
 }
 
 #mainNav {
@@ -20,14 +26,23 @@ body {
 	display: inline-block;
 	padding: 15px;
 	color: white;
+  font-family: "Happy Monkey";
 }
 
 #main {
-  margin: 0px 25%;
-  display:  grid;
-  grid-template-rows: 25% 75%;
-  grid-template-columns: 25% 75%;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  grid-template-columns: 30% 70%;
   grid-template-areas: "block1 block2";
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
 }
 
 #block1 {
@@ -49,6 +64,8 @@ body {
 	border-bottom: solid;
 	border-color: white;
 	margin: 10px;
+  text-align: center;
+  font-family: "Happy Monkey";
 }
 
 #block2 {
@@ -93,7 +110,7 @@ body {
 .workGrid img {
   max-width: 100%;
   max-height: 100%;
-  height: 60%;
+  height: 80%;
   width: 80%;
 }
 
@@ -121,7 +138,7 @@ body {
   #sideNav {
     display: flex;
     flex-direction: row;
-    margin: 25%;
+    margin: 20%;
   }
 
   .sideBar {
@@ -144,17 +161,20 @@ body {
     display: flex;
     position: relative;
     min-width: 600px;
-    height: 70vh;
-    padding: 30px;
+    height: 10px;
+    margin: 0px;
+    margin-bottom: 30px;
     text-align: center;
     overflow: auto;
   }
 
   .workGrid {
+    position: absolute;
     display: grid;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "myArea"
+    grid-template-areas: 
+    "myArea"
     "myArea" 
     "myArea";
   }

@@ -2,14 +2,15 @@
 <html>
 <head>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
   <title>Welcome!</title>
 </head>
 <body>
   <nav id="mainNav">
     <h1>火锅</h1>
     <div id="navigation">
-      <div class="navBar">About</div>
-      <div class="navBar">Skills</div>
+      <div class="navBar"><a href="index.html">About</a></div>
+      <div class="navBar"><a href="skills.html">Skills</a></div>
       <div class="navBar">Work</div>
       <div class="navBar">Contact</div>
     </div>
@@ -17,32 +18,35 @@
 
   <section id="main">
     <div id="block1" class="mainGridArea">
-      <nav id="sideNav">
-        <div class="sideBar"><a href="index.html">About</a></div>
-        <div class="sideBar"><a href="skills.html">Skills</a></div>
+      <nav id="sideNav" class="center">
         <div class="sideBar">Work</div>
-        <div class="sideBar">Contact</div>
       </nav>
     </div>
     <div id="block2" class="mainGridArea">
     <!-- My Work Section Constructed using CSS Grid -->
     <div class="workGrid">
       <div class="myArea"><img src="images/travelverse.png"></div>
-      <div class="myArea"><h4>Travelverse</h4>
+      <div class="myArea">
+        <h4>Travelverse</h4>
         <p>An application prototype displaying ways to make traveling easier post pandemic.</p>
         <p>Role: UX Researcher</p>
-        <button>View More</button></div>
+        <button>View More</button>
+      </div>
       <div class="myArea"><img src="images/perform.png"></div>
-      <div class="myArea"><h4>PerForm</h4>
+      <div class="myArea">
+        <h4>PerForm</h4>
         <p>An application prototype helping beginners in strength training figure out a regime and
         helping beginners have correct posture.</p>
         <p>Role: UX Researcher</p>
-        <button>View More</button></div>
+        <button>View More</button>
+      </div>
       <div class="myArea"><img src="images/redesign.png"></div>
-      <div class="myArea"><h4>UWCM Website Re-Design</h4>
+      <div class="myArea">
+        <h4>UWCM Website Re-Design</h4>
         <p>A website redesign of the United Way of Central Maryland's website.</p>
         <p>Role: Design Ops</p>
-        <button>View More</button></div>
+        <button>View More</button>
+      </div>
     </div>
 
     <h3>View all projects</h3>
@@ -53,5 +57,8 @@
 
   <section class="footer">
   </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
