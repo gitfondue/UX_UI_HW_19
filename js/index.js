@@ -8,7 +8,13 @@ $(document).ready(function() {
 	$(".workGrid").css('display', 'none');
 	$(".workGrid").fadeIn(2000);
 
-	$(".sideBar").animate({borderBottomWidth: "5px"},300,"linear");
+	$(".sideBarText").animate({borderBottomWidth: "5px"},300,"linear");
+
+	$( function() {
+    $( ".navBar" ).on("click", function() {
+      $( "#effect" ).toggleClass( "newClass", 1000 );
+    });
+  } );
 });
 
 $(".navBar").hover(function(){

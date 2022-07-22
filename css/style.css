@@ -1,15 +1,40 @@
 body {
 	background-color: #EAEAEA;
   font-family: "Verdana"; 
-  font-size: 14px;
+  font-size: 15px;
+}
+
+p {
+  font-size: 18px;
 }
 
 h1 {
   font-size: 30px;
 }
 
-h3,h4 {
+h2 {
   font-family: "Avenir";
+  font-size: 30px;
+  margin: 0px;
+}
+
+h3 {
+  font-family: "Avenir";
+  font-size: 20px;
+}
+
+h4 {
+  border-bottom: solid;
+  padding: 5px;
+  margin: 0px;
+  border-color: #E54B4B;
+  display: inline;
+  font-family: "Happy Monkey";
+}
+
+.trans {
+  margin: 0px;
+  font-size: 10px;
 }
 
 a, a:hover, a:active, a:visited, a:focus {
@@ -26,8 +51,8 @@ a, a:hover, a:active, a:visited, a:focus {
 #navigation {
 	margin: 0px 5%;
 	position: absolute;
-    top: 20px;
-    right: 0px;
+  top: 20px;
+  right: 0px;
 }
 
 .navBar {
@@ -38,62 +63,67 @@ a, a:hover, a:active, a:visited, a:focus {
   font-family: "Happy Monkey";
 }
 
+.navBar:hover {
+  border-bottom: solid;
+  border-color: #ffcb3b;
+}
+
 #main {
   margin: auto;
   width: 60%;
   padding: 10px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*display: grid;
   grid-template-rows: 30% 70%;
   grid-template-columns: 30% 70%;
   grid-template-areas: "block1 block2";
+  max-height: auto; */
 }
 
-.center {
+/* .center {
   margin: auto;
   width: 60%;
   padding: 10px;
-}
+} */
 
 #block1 {
-  grid-area: block1;
   background-image: url("../images/block1bg.png");
   background-color: #E54B4B;
   position: relative;
+  padding: 40px;
+  width: 60%;
 }
 
-#sideNav {
-  display: flex;
-  flex-direction: column;
-  margin: 15%;
-}
+#sideBar {
+  display: inline-block;
+  margin: 10px;
+} 
 
-.sideBar {
-	display: inline-block;
-	padding: 10px;
-	color: white;
-	border-bottom: 0px solid;
-	border-color: white;
-	margin: 10px;
-  text-align: center;
+.sideBarText {
+  color: #ffcb3b;
   font-family: "Happy Monkey";
-}
+  font-size: 20px;
+  border-bottom: 0px solid;
+  border-color: #ffcb3b;
+  padding: 10px;
+  position: relative;
+} 
 
 #block2 {
-  grid-area: block2;
   background-color: #C3BFBF;
   display: inline-block;
+  flex: 0 0 60%;
 }
 
 .mainGridArea {
   align-items: center;
   display: flex;
   position: relative;
-  min-height: 500px;
-  height: 70vh;
   padding: 30px;
   box-shadow: 10px 10px 5px gray;
   text-align: center;
-  overflow: auto;
 }
 
 .mainGridArea img {
@@ -138,64 +168,5 @@ button {
 
   body {
     background-color: #C3BFBF;
-  }
-
-  #main {
-    margin: 0px;
-    display:  grid;
-    grid-template-rows: 25% 75%;
-    grid-template-columns: 25% 75%;
-    grid-template-areas: "block1"
-    "block2";
-  }
-
-  #block1 {
-    grid-area: block1;
-    background-color: #E54B4B;
-    position: relative;
-  }
-
-  #sideNav {
-    display: flex;
-    flex-direction: row;
-    margin: 20%;
-  }
-
-  .sideBar {
-    display: inline-block;
-    padding: 50px;
-    color: white;
-    border-bottom: solid;
-    border-color: white;
-    margin: 100px;
-  }
-
-  #block2 {
-    grid-area: block2;
-    background-color: #C3BFBF;
-    display: inline-block;
-  }
-
-  .mainGridArea {
-    align-items: center;
-    display: flex;
-    position: relative;
-    min-width: 600px;
-    height: 10px;
-    margin: 0px;
-    margin-bottom: 30px;
-    text-align: center;
-    overflow: auto;
-  }
-
-  .workGrid {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "myArea"
-    "myArea" 
-    "myArea";
-    padding: 20px;
-    margin: 20px;
   }
 }
