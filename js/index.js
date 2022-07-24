@@ -1,4 +1,5 @@
 // $(document).ready(function() {
+
 	$(".intro").css('display', 'none');
 	$(".intro").fadeIn(2000);
 

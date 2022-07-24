@@ -1,6 +1,6 @@
 body {
 	background-color: #EAEAEA;
-  font-family: "Verdana"; 
+  font-family: "Avenir"; 
   font-size: 15px;
 }
 
@@ -13,13 +13,13 @@ h1 {
 }
 
 h2 {
-  font-family: "Avenir";
+  font-family: "Inconsolata";
   font-size: 30px;
   margin: 0px;
 }
 
 h3 {
-  font-family: "Avenir";
+  font-family: "Inconsolata";
   font-size: 20px;
 }
 
@@ -155,6 +155,10 @@ a, a:hover, a:active, a:visited, a:focus {
   width: 80%;
 }
 
+.myArea {
+  padding: 10px;
+}
+
 button {
   background-color: #E54B4B;
   color: white;
@@ -170,4 +174,33 @@ button {
   body {
     background-color: #C3BFBF;
   }
+
+  #main {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #block1 {
+    background-image: url("../images/block1bg.png");
+    background-color: #E54B4B;
+    position: relative;
+    padding: 50px;
+    width: 80%;
+  }
+
+  .sideBarText {
+    color: #ffcb3b;
+    font-family: "Happy Monkey";
+    font-size: 25px;
+    border-bottom: 0px solid;
+    border-color: #ffcb3b;
+    padding: 0 100px 5px 0;
+    margin: 30px;
+    position: absolute; top: 0;
+  } 
+
 }
