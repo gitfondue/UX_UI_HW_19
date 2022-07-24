@@ -92,7 +92,7 @@ a, a:hover, a:active, a:visited, a:focus {
   background-image: url("../images/block1bg.png");
   background-color: #E54B4B;
   position: relative;
-  padding: 40px;
+  padding: 0px;
   width: 60%;
 }
 
@@ -104,11 +104,12 @@ a, a:hover, a:active, a:visited, a:focus {
 .sideBarText {
   color: #ffcb3b;
   font-family: "Happy Monkey";
-  font-size: 20px;
+  font-size: 25px;
   border-bottom: 0px solid;
   border-color: #ffcb3b;
-  padding: 10px;
-  position: relative;
+  padding: 0 100px 5px 0;
+  margin: 30px;
+  position: absolute; top: 0;
 } 
 
 #block2 {
